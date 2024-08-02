@@ -149,7 +149,7 @@ jobs:
       run: |
         rm -rf ./artifact/
         mkdir -p ./artifact/
-        mv openwrt/bin/targets/amlogic/mesongx/*sysupgrade.img* ./artifact/
+        mv openwrt/bin/targets/armsr/armv8/*rootfs.tar.gz* ./artifact/
         cd ./artifact/
         gzip -d *.gz && exit 0
         gzip --best *.img
