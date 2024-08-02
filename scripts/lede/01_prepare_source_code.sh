@@ -13,6 +13,6 @@ clone_repo $openclash_repo master openclash &
 wait
 
 # Modify default IP (FROM 192.168.1.1 CHANGE TO 192.168.1.99 )
-sed -i 's/192.168.1.1/192.168.1.99/g' openwrt/package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.1.1/g' openwrt/package/base-files/files/bin/config_generate
 
 exit 0
